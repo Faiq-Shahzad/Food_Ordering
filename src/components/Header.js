@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 const Header = () => {
   return (
@@ -7,6 +9,7 @@ const Header = () => {
       <header className={styles.header}>
         <h1>ReactMeals</h1>
         <button type="button">Your Cart</button>
+        <FontAwesomeIcon icon={{prefix:'fa', iconName:'cart-shopping'}} />
       </header>
       <div className={styles["main-image"]}>
         <img
