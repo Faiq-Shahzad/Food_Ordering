@@ -11,8 +11,6 @@ const Header = () => {
       <header className={styles.header}>
         <h1>ReactMeals</h1>
         <button type="button" ><ShoppingCartIcon style={{color:'white'}}/> Your Cart</button>
-        
-        {/* <FontAwesomeIcon icon='fa-solid fa-cart-shopping' /> */}
       </header>
       <div className={styles["main-image"]}>
         <img
