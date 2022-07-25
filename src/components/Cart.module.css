@@ -19,11 +19,6 @@
   background-color: white;
 }
 
-.header {
-  background:  rgb(20, 20, 88);
-  padding: 1rem;
-}
-
 .header h2 {
   margin: 0;
   color: white;
@@ -34,19 +29,32 @@
   font-size: large;
 }
 
-.actions {
-  padding: 1rem;
+.footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
+  padding: 1%;
 }
 
-.actions button{
-  width: 18%;
-  height: 35px;
-  background-color: rgb(20, 20, 88);
+.footer > .cancelBtn {
+  width: 20%;
+  height: 40px;
+  margin-top: 1%;
+  font-size: large;
+  border-radius: 20px;
+  border-color: #8a2b06;
+  margin-right: 0;
+}
+
+.footer > .orderBtn {
+  width: 20%;
+  height: 40px;
+  background-color: #8a2b06;
+  border-radius: 20px;
   color: white;
   margin-top: 1%;
   font-size: large;
+  margin-right: 0;
+
 }
 
 @media (min-width: 768px) {

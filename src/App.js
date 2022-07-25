@@ -7,11 +7,11 @@ import Cart from "./components/Cart";
 function App() {
   const [cart, setCart] = useState(false);
 
-  const showCartHandler = () =>{
+  const showCartHandler = (event) =>{
     setCart(true);
   }
 
-  const hideCartHandler = () =>{
+  const hideCartHandler = (event) =>{
     setCart(false);
   }
 
