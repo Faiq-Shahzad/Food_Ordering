@@ -48,8 +48,8 @@ function App() {
 
   return (
     <div>
-      {cart && <Cart />}
-      <Header onShowCart={showCartHandler} onHideCart={hideCartHandler} />
+      {cart && <Cart onHideCart={hideCartHandler} />}
+      <Header onShowCart={showCartHandler} />
       <Quote />
       <FoodList items={dummyFood} />
     </div>
