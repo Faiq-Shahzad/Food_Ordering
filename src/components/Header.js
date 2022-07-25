@@ -4,7 +4,10 @@ import styles from "./Header.module.css";
 const Header = () => {
   return (
     <div>
-      <header className={styles.header}><h1>ReactMeals</h1></header>
+      <header className={styles.header}>
+        <h1>ReactMeals</h1>
+        <button type="button">Your Cart</button>
+      </header>
       <div className={styles["main-image"]}>
         <img
           src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000"

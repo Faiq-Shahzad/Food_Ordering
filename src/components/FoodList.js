@@ -28,7 +28,7 @@ const FoodList = (props) => {
             >
               <div>
                 <h4>Quantity</h4>
-                <input type="number" value={amount} onChange={amountHandler} />
+                <input type="number" value={amount} onChange={amountHandler} min={1} />
               </div>
               <button type="submit" onClick={addHandler}>
                 + Add

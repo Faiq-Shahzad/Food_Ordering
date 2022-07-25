@@ -32,6 +32,8 @@
   width: 28%;
   height: 1rem;
   margin-top: 20%;
+  border-radius: 5px;
+  border: 1px solid rgb(206, 180, 180)
 }
 
 .rightdiv > button {
