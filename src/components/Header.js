@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Header.module.css";
-import { FaShoppingCart } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+
 
 
 const Header = () => {
@@ -8,8 +10,9 @@ const Header = () => {
     <div>
       <header className={styles.header}>
         <h1>ReactMeals</h1>
-        <button type="button">Your Cart</button>
-        <FaShoppingCart />
+        <button type="button" ><ShoppingCartIcon style={{color:'white'}}/> Your Cart</button>
+        
+        {/* <FontAwesomeIcon icon='fa-solid fa-cart-shopping' /> */}
       </header>
       <div className={styles["main-image"]}>
         <img
