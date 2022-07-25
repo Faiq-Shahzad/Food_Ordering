@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Quote from "./components/Quote";
+import Foods from "./components/Foods"
 
 function App() {
+  const dummyFood = [
+    {
+      id: "f1",
+      title: "Sushi",
+      description: "Finest Fish and Veggies",
+      amount: 1,
+      price: 16.50,
+    },
+    {
+      id: "f2",
+      title: "Chicken Karhai",
+      description: "Spicy chicken with gravy",
+      amount: 1,
+      price: 10.50,
+    },
+    {
+      id: "f3",
+      title: "Burger",
+      description: "For Burgers",
+      amount: 1,
+      price: 12.25,
+    },
+    {
+      id: "f4",
+      title: "Ramen",
+      description: "Spciy Noodles and Broth Along with multiple Toppings",
+      amount: 1,
+      price: 20.99,
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Quote />
+      <Foods items={dummyFood} />
+      
     </div>
   );
 }
