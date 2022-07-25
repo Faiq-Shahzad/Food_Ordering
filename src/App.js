@@ -1,8 +1,20 @@
+import { useState } from "react";
 import Header from "./components/Header";
 import Quote from "./components/Quote";
-import FoodList from "./components/FoodList"
+import FoodList from "./components/FoodList";
+import Cart from "./components/Cart";
 
 function App() {
+  const [cart, setCart] = useState(false);
+
+  const showCartHandler = () =>{
+    setCart(true);
+  }
+
+  const hideCartHandler = () =>{
+    setCart(false);
+  }
+
   const dummyFood = [
     {
       id: "f1",
@@ -33,12 +45,13 @@ function App() {
       price: "20.99",
     },
   ];
+
   return (
     <div>
-      <Header />
+      {cart && <Cart />}
+      <Header onShowCart={showCartHandler} onHideCart={hideCartHandler} />
       <Quote />
       <FoodList items={dummyFood} />
-      
     </div>
   );
 }

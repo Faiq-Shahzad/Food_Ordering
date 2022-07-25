@@ -1,16 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Cart from "./Cart";
 
+const Header = (props) => {
 
+  const showCart = () => {
+    props.onShowCart(true);
+  };
 
-const Header = () => {
   return (
     <div>
       <header className={styles.header}>
         <h1>ReactMeals</h1>
-        <button type="button" ><ShoppingCartIcon style={{color:'white'}}/> Your Cart</button>
+        <button type="button" onClick={showCart} ><ShoppingCartIcon style={{color:'white'}}/> Your Cart</button>
       </header>
       <div className={styles["main-image"]}>
         <img
