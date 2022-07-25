@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Quote from "./components/Quote";
-import Foods from "./components/Foods"
+import FoodList from "./components/FoodList"
 
 function App() {
   const dummyFood = [
@@ -37,7 +37,7 @@ function App() {
     <div>
       <Header />
       <Quote />
-      <Foods items={dummyFood} />
+      <FoodList items={dummyFood} />
       
     </div>
   );
