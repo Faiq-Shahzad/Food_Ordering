@@ -1,4 +1,5 @@
 # Food-Ordering-Web-Application
+![image](https://github.com/Faiq-Shahzad/Food_Ordering/assets/85623366/53d3a896-0b7f-4e06-b78b-8edef030362d)
 
 ## Tools and Technologies
 
